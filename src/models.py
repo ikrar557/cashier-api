@@ -37,7 +37,7 @@ Base = declarative_base()
 class Items(Base):
     __tablename__ = "barang"
     
-    nobarcode = Column(Integer, primary_key=True)
+    nobarcode = Column(String, primary_key=True)
     nama = Column(String)
     harga = Column(Integer)
     stok = Column(Integer)
@@ -45,7 +45,7 @@ class Items(Base):
 class Supplier(Base):
     __tablename__ = "supplier"
     
-    idsup = Column(Integer, primary_key=True)
+    idsup = Column(String, primary_key=True)
     nama = Column(String, index=True)
     alamat = Column(String)
     nohp = Column(String)
