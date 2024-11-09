@@ -32,7 +32,6 @@ def seed_data():
     for _ in range(10): 
         session.execute(
             supplier.insert().values(
-                idsup=fake.uuid4(),
                 nama=fake.name(),
                 alamat=fake.address(),
                 nohp=fake.phone_number()

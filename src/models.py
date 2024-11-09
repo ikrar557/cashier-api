@@ -44,8 +44,8 @@ class Items(Base):
     
 class Supplier(Base):
     __tablename__ = "supplier"
-    
-    idsup = Column(String, primary_key=True)
+
+    idsup = Column(Integer, primary_key=True, autoincrement=True) 
     nama = Column(String, index=True)
     alamat = Column(String)
     nohp = Column(String)
