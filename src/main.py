@@ -1,7 +1,26 @@
 from fastapi import FastAPI
-from models import Items, Supplier, session
+from src.models import Items, Supplier, session
 
 app = FastAPI()
+
+@app.get("/")
+async def root():
+    return {
+        "subject": "Mobile Testing",
+        "class": "TI 21 B",
+        "purpose": "task for midterm",
+        "identity": [
+            {
+                "name": "Ikrar Bagaskara",
+                "nim": "210103101"
+            },
+            {
+                "name": "Anggun Berlian Agustina",
+                "nim": "210103178"
+            }
+        ]
+    }
+
 
 @app.get("/items")
 async def get_all_items():
