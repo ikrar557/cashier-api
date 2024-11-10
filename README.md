@@ -20,7 +20,7 @@ python3 database/barang_seeder.py
 ```
 6. Run your project with
 ```bash
-uvicorn src.main:app --host 0.0.0.0 --port 8000
+uvicorn src.main:app --host 0.0.0.0 --port 8080
 ```
 
 ## Docker deployment
@@ -34,4 +34,4 @@ docker-compose up
 ```
 
 ## How to access?
-Navigate to your browser and access ```localhost:8000``` for entrypoint, or you can navigate to ```localhost:8000/docs``` to see lists of endpoints.
+Navigate to your browser and access ```localhost:8080``` for entrypoint, or you can navigate to ```localhost:8080/docs``` to see lists of endpoints.

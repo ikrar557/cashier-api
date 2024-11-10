@@ -5,7 +5,7 @@ from sqlalchemy.engine import URL
 from sqlalchemy.orm import declarative_base, sessionmaker
 from dotenv import load_dotenv
 
-load_dotenv()
+load_dotenv(override=True)
 
 # * Fetch environment variables
 db_driver = os.getenv("DB_DRIVER", "postgresql")

@@ -4,7 +4,7 @@ from faker import Faker
 import os
 from dotenv import load_dotenv
 
-load_dotenv()
+load_dotenv(override=True)
 
 db_driver = os.getenv("DB_DRIVER", "postgresql")
 db_username = os.getenv("DB_USERNAME")

@@ -19,7 +19,8 @@ depends_on: Union[str, Sequence[str], None] = None
 
 
 def upgrade() -> None:
-    op.create_table('barang',
+    op.create_table(
+        'barang',
                     sa.Column('nobarcode', sa.String, primary_key=True),
                     sa.Column('nama', sa.String),
                     sa.Column('harga', sa.Integer),
