@@ -21,7 +21,6 @@ if not all([db_driver, db_username, db_host, db_database, db_port]):
     raise ValueError("Missing required database configuration in environment variables")
 
 db_url = f"{db_driver}://{db_username}:{db_password}@{db_host}:{db_port}/{db_database}"
-print("Database URL:", db_url)
 
 fake = Faker()
 fake.add_provider(faker_commerce.Provider)
